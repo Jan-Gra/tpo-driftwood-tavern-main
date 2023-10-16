@@ -1,0 +1,94 @@
+@import url("./general.style.css");
+
+/*html {
+  box-sizing: border-box;
+}*/
+
+*,*::after, *::before {
+  box-sizing: inherit;
+}
+
+/*Forms*/
+
+.form{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 2.5em 0.5em;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form_title {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.form_container {
+ margin-top: 2.5em;
+}
+
+.form_group {
+  position: relative;
+}
+
+/*image-suggestions*/
+
+.book1{
+    height: 500px;
+    width: none;
+    display: flex;
+  } 
+
+  /*image-booking*/
+
+.party-playing {
+    height: 500px;
+    width: none;
+    display: flex;
+}
+
+.form_input{
+  width: 100%;
+  font-size: 1rem;
+  padding: 1em 1em;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: white;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  resize: none;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label {
+  transform: translateY(-12px) scale(1);
+  transform-origin: left top;
+}
+
+.form_label {
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
+}
+
+.form_submit {
+  cursor: pointer;
+  width: 100%;
+  background-color: white;
+  font-size: 1.3rem;
+  padding:0.6em 0;
+  border: none;
+  border-radius: 0.5em; 
+  font-family:"Mr Eaves Small Caps";
+}
+
+.form_submit:hover{
+  background-color:#C0AD6A; ;
+}
+

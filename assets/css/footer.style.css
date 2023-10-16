@@ -1,0 +1,51 @@
+@import url("./general.style.css");
+
+footer {
+    background-color: var(--colorBackgroundFooter);
+    text-align: center;
+    height: max-content;
+}
+
+.section-footer{
+    margin-top: 5em;
+}
+
+.social-network > h3{
+    padding-top: 3em;
+    margin-bottom: 1em;
+}
+
+.social-network a{
+    text-decoration: none;
+    color: #000;
+    font-family: var(--fontFooter);
+}
+
+.social-network-links-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social-network-links-list li{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.social-network-links-list img{
+    max-width: 20%;
+    height: auto;
+}
+
+.rights p{
+    padding: 1% 5% 2% 5%;
+}
+
+@media screen and (min-width: 880px){
+    .social-network-links-list img{
+        max-width: 15%;
+        height: auto;
+    }
+}
