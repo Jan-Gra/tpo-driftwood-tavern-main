@@ -6,10 +6,9 @@
     <link rel="stylesheet" href="../assets/css/header.style.css">
     <link rel="stylesheet" href="../assets/css/main.style.css">
     <link rel="stylesheet" href="../assets/css/footer.style.css">
-    <link rel="stylesheet" href="../assets/css/form-contact.style.css">
+    <link rel="stylesheet" href="../assets/css/form.style.css">
     <link rel="shortcut icon" href="../assets/media/icons/galeon.png" type="image/x-icon">
-    <title>Driftood Tavern: Contacto</title>
-    <title>Contact_Form</title>
+    <title>Driftood Tavern: Contactanos</title>
 </head>
 <body>
     <header>
@@ -27,58 +26,78 @@
                     <li><a href="./our-history.html">Nuestra Historia</a></li>
                     <li><a href="./find-us.html">Como llegar</a></li>
                     <li><a href="./form-booking.html">Reservas</a></li>
-                    <li><a href="./form-suggestions.html">Sugerencias</a></li>
-                    <li><a href="./our-history.html#social-network">Redes sociales</a></li>
                     <li><a href="./form-contact.html">Contactanos</a></li>
+                    <li><a href="./our-history.html#social-network">Redes sociales</a></li>            
                 </ul>
             </div>
         </nav>
     </header>
-   <div class="form_container">
-        
-        <h1>Formulario de Contacto </h1>
 
-        <div class="contenido">
-
-            <div clas="info">
-
-                <div class="col">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Av. La taberna de Duggueons and Dragons - Pais</p>
+    <main>
+        <section class="form-contact section-main" id="form-contact">
+        <img class="book1" src="../assets/media/images/book1.jpg" alt="sugerencias">
+        <form class="form" id="form">
+            <h2 class="form_title">Contactanos</h2>
+            <div class="form_container">
+                <div class="form_group">
+                    <input type="text" id="nombre" class="form_input"  placeholder=" " required>
+                    <label for="nombre" class="form_label"> Nombre</label>
+                    <p class="mensaje_error">Error al llenar el campo</p>      
+                </div>  
+                <div class="form_group">
+                    <input type="text" id="correo" class="form_input"  placeholder=" " required>
+                    <label for="correo" class="form_label">Correo electronico</label>
+                    <p class="mensaje_error">Error al llenar el campo</p>
                 </div>
-                <div class="col">
-                    <i class="fas fa-envelope"></i>
-                    <p>Consulta@correo.com</p>
+                <div class="form_group">
+                    <input type= "text" id="asunto" class="form_input"  placeholder=" " required>
+                    <label for="asunto" class="form_label">Asunto</label>
+                    <p class="mensaje_error">Error al llenar el campo</p>
+                </div> 
+                <div class="form_group">
+                    <textarea type="Mensaje" rows="7" cols="20" id="Mensaje" class="form_input" placeholder=" " required></textarea>
+                    <label for="Mensaje" class="form_label">Mensaje</label>
+                    <p class="mensaje_error">Error al llenar el campo</p>
                 </div>
-                <div class="col">
-                    <i class="fas fa-phone"></i>
-                    <p>(xx) xxxx-xxxx </p> (xx) xxxx-xxxx
-                </div>
-
-                <div class="redes-s">
-
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-
-                </div>
-
+                <input type="submit" class="form_submit" id=submit value="Enviar">
+                <p class="mensaje_correcto">Mensaje enviado con exito</p>
             </div>
+        </form> 
+        
+    </main>
+    
+    <footer>
+        <section class="social-network section-footer" id="social-network">
+            <h3>Redes sociales</h3>
+            <ul class="social-network-links-list">
+                <li>Facebook<a href="https://www.facebook.com/dndbeyond/" target="_blank">
+                    <img src="../assets/media/icons/facebook.png" alt="icono de facebook">
+                </a></li>
+                <li>Twitter<a href="https://twitter.com/DnDBeyond" target="_blank">
+                    <img src="../assets/media/icons/gorjeo.png" alt="icono de twitter">
+                </a></li>
+                <li>Instagram<a href="https://www.instagram.com/dndbeyond/?hl=es" target="_blank">
+                    <img src="../assets/media/icons/instagram.png" alt="icono de instagram">
+                </a></li>
+            </ul>
+        </section>
+        
+        <section class="rights section-footer">
+            <h3>Derechos y Aclaraciones</h3>
+            <p>
+                Esta pagina esta creada para un trabajo practico y es un Contenido de Fan no oficial creado por la comunidad de 
+                fans y permitido bajo la Política de Contenido de Fan de Wizards of the Coast. 
+                Este sitio web y su contenido no están aprobados, respaldados ni patrocinados por Wizards of the Coast.
+                <br>
+                Todas las marcas registradas y derechos de autor pertenecen a sus respectivos propietarios. 
+                Porciones de los materiales utilizados son propiedad de Wizards of the Coast. 
+                ©Wizards of the Coast LLC.
+            </p>
+        </section>
 
-            <form action="" method="GET" class="form">
-
-                <input type="text" name="nombre" placeholder="Nombre" id="nombre">
-                <input type="text" name="correo" placeholder="Correo electronico" id="correo">
-                <input type="text" name="asunto" placeholder="Asunto" id="asunto">
-                <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
-                <button type="button">Enviar</button>
-
-            </form>
-
-        </div>   
-   </div> 
-   <footer>
-   </footer>
-   <script type="module" src="./assets/js/menu.script.js"></script>
+    </footer>
+    <script src="./assets/js/form.validation.script.js"></script>
+    <script type="module" src="./assets/js/menu.script.js"></script>
+    
 </body>
 </html>

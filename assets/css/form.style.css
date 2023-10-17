@@ -15,7 +15,7 @@
   width: 90%;
   max-width: 400px;
   padding: 2.5em 0.5em;
-  border-radius: 10px;
+  border-radius: 5px;
   text-align: center;
 }
 
@@ -60,6 +60,7 @@
   margin-top: 1em;
   margin-bottom: 1em;
   resize: none;
+  font-family: "Scaly Sans";
 }
 
 .form_input:focus + .form_label,
@@ -75,6 +76,7 @@
   left: 5px;
   transform: translateY(10px);
   transition: transform 0.5s, color 0.3s;
+  font-family: "Scaly Sans";
 }
 
 .form_submit {
@@ -85,10 +87,21 @@
   padding:0.6em 0;
   border: none;
   border-radius: 0.5em; 
-  font-family:"Mr Eaves Small Caps";
+  font-family: "Scaly Sans";
 }
 
 .form_submit:hover{
   background-color:#C0AD6A; ;
 }
 
+.mensaje_error{
+  color: #58180D;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: left;
+  padding-bottom: 10px; 
+}
+
+.mensaje_correcto{
+  text-align: center;
+}
