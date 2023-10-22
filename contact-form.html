@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/header.style.css">
+    <link rel="stylesheet" href="../assets/css/main.style.css">
+    <link rel="stylesheet" href="../assets/css/footer.style.css">
+    <link rel="shortcut icon" href="../assets/media/icons/galeon.png" type="image/x-icon">
+    <title>Driftood Tavern: Contact Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h3><a href="../index.html">Driftwood Tavern</a></h3>
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div class="ham-bar bar-top"></div>
+                    <div class="ham-bar bar-mid"></div>
+                    <div class="ham-bar bar-bottom"></div>
+                </div>
+            </div>
+            <div class="off-screen-menu">
+                <ul class="navigation-links-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./our-history.html">Our History</a></li>
+                    <li><a href="./location.html">Location</a></li>
+                    <li><a href="./potions-catalog.html">Potions Catalog</a></li>
+                    <li><a href="./contact-form.html#contact-form">Contact Us</a></li>
+                    <li><a href="./contact-form.html#social-media">Social Media</a></li>            
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-contact section-main">
+            <div class="form-container description">
+                <h1>Contact Us</h1 >
+                <p>
+                    We provide a <i><b>Scroll of Sending</b></i> for you to send us your inquiries. Remember, 
+                    the message must not exceed 25 words, 
+                    and if you're on another plane of existence, there's a 5% chance that the message doesn't arrive.
+                </p>
+                <form action="https://getform.io/f/be8c4521-1a85-4cf1-bbed-5795925bde45" method="POST" class="form" id="contact-form">
+                    <div class="name-subjet">
+                        <div class="name">
+                            <label for="name" class="form-label"> Name:</label>
+                            <span id="error-name"></span>
+                            <input type="text" name="name" id="name" autocomplete="off" class="form-input" placeholder="" required>
+                        </div>
+
+                        <div class="email">
+                            <label for="email" class="form-label">Email:</label>
+                            <span id="error-email"></span>
+                            <input type="text" name="email" id="email" autocomplete="off" class="form-input" placeholder="" required>
+                        </div>
+                    </div> 
+                    <div class="message">
+                        <label for="message" class="form-label">Message:</label>
+                        <span id="error-message"></span>
+                        <textarea type="message" name="message" rows="4" id="message" class="form-input" placeholder="" oninput="validarmessage()" required ></textarea>
+                        <P>Remaining Words: <span id="wordCount">25</span></P>
+                    </div>
+                    <input type="submit" class="form-submit" id=submit value="Enviar">
+                </form> 
+            </div>
+            <img class="image" src="../assets/media/images/scroll-of-sending.webp" alt="sugerencias">
+        </section>
+    </main>
+    
+    <footer>
+        <section class="social-media section-footer" id="social-media">
+            <h3>Social media</h3>
+            <ul class="social-media-links-list">
+                <li>Facebook<a href="https://www.facebook.com/dndbeyond/" target="_blank">
+                    <img src="../assets/media/icons/facebook.png" alt="facebook icon">
+                </a></li>
+                <li>Twitter<a href="https://twitter.com/DnDBeyond" target="_blank">
+                    <img src="../assets/media/icons/gorjeo.png" alt="twitter icon">
+                </a></li>
+                <li>Instagram<a href="https://www.instagram.com/dndbeyond/?hl=es" target="_blank">
+                    <img src="../assets/media/icons/instagram.png" alt="instagram icon">
+                </a></li>
+            </ul>
+        </section>
+
+        <section class="rights section-footer">
+            <h4>Rights and Disclaimers</h4>
+            <p>
+                This page is created for an assignment and is unofficial Fan Content created by the fan community and 
+                allowed under Wizards of the Coast's Fan Content Policy.
+                This website and its content are not approved, endorsed, or sponsored by Wizards of the Coast.
+                <br>
+                All trademarks and copyrights are the property of their respective owners.
+                Portions of the materials used are property of Wizards of the Coast.
+                ©Wizards of the Coast LLC.
+            </p>
+            </p>
+        </section>
+    <script type="module" src="../assets/js/menu.script.js"></script>
+    <script type="module" src="../assets/js/validations.script.js"></script>
+</body>
+</html>
